@@ -113,21 +113,119 @@ function budayasaya_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	//Add custom footer widget (3 item)
+
+	register_sidebar( array(
+		'name' => 'Footer Sidebar 1',
+		'id' => 'footer-sidebar-1',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
+		register_sidebar( array(
+		'name' => 'Footer Sidebar 2',
+		'id' => 'footer-sidebar-2',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
+		register_sidebar( array(
+		'name' => 'Footer Sidebar 3',
+		'id' => 'footer-sidebar-3',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		) );
 }
 add_action( 'widgets_init', 'budayasaya_widgets_init' );
 
 register_nav_menus( array(
 	'primary' => __( 'Menu Utama', 'budayasaya' ),
 ) );
+
+/**
+ * add admin option, created with Titan Framework
+ */
+
+// Check whether the Titan Framework plugin is activated, and notify if it isn't
+	add_action( 'tf_create_options', 'budayasaya_create_options' );
+	function budayasaya_create_options() {
+	// Initialize Titan with my special unique namespace
+		$titan = TitanFramework::getInstance( 'budayasaya' );
+	// Create my admin panel
+		$panel = $titan->createAdminPanel( array(
+			'name' => 'Theme Options',
+		) );
+	// Create tab options
+		$post_list_tab = $panel->createTab( array(
+		'name' => 'Post List Content',
+		) );
+		// Create options in post_list_tab
+		$post_list_tab->createOption( array(
+			'name' => 'Main Slider',
+			'id' => 'main_slider',
+			'type' => 'text',
+			'desc' => 'Fill with category id'
+		) );
+		$post_list_tab->createOption( array(
+			'name' => 'Post List 1',
+			'id' => 'post_list_1',
+			'type' => 'text',
+			'desc' => 'Fill with category id'
+		) );
+		$post_list_tab->createOption( array(
+			'name' => 'Post List 2',
+			'id' => 'post_list_2',
+			'type' => 'text',
+			'desc' => 'Fill with category id'
+		) );
+		$post_list_tab->createOption( array(
+			'name' => 'Post Thumbnails 1',
+			'id' => 'post_thumbnails_1',
+			'type' => 'text',
+			'desc' => 'Fill with category id'
+		) );
+		$post_list_tab->createOption( array(
+			'name' => 'Post Thumbnails 2',
+			'id' => 'post_thumbnails_2',
+			'type' => 'text',
+			'desc' => 'Fill with category id'
+		) );
+		$post_list_tab->createOption( array(
+			'type' => 'save'
+		) );
+
+	// Create tab options
+		$text_tab = $panel->createTab( array(
+		'name' => 'Text About',
+		) );
+		// Create options in post_list_tab
+		$text_tab->createOption( array(
+			'name' => 'Text "about" bottom of slider',
+			'id' => 'about',
+			'type' => 'textarea',
+			'desc' => 'Fill with about website'
+		) );
+		$text_tab->createOption( array(
+			'type' => 'save'
+		) );
+	}
 /**
  * Enqueue scripts and styles.
  */
 function budayasaya_scripts() {
+	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css' );
+	
 	wp_enqueue_style( 'budayasaya-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css' );
-
-	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css' );
 
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' );
 
