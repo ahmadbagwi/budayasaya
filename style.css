@@ -1,23 +1,17 @@
 /*!
 Theme Name: budayasaya
-Theme URI: http://underscores.me/
+Theme URI: https://kebudayaan.kemdikbud.go.id/
 Author: Ahmad Bagwi
 Author URI: https://ahmadbagwi.id
-Description: Theme for budayasaya
+Description: Theme for Directorate General of Cultural, Ministry of Education and Culture Indonesia
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: budayasaya
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Special theme for Ditjen Kebudayaan, build with love.
 
-budayasaya is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -392,6 +386,47 @@ template {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+h1,
+h2,
+h3 {
+	font-family: "Source Sans Pro"!important;
+	font-size: 1.5rem!important;
+}
+
+h4,
+h5,
+h6 {
+	font-family: "Source Sans Pro"!important;
+	font-size: 1.3rem!important;
+}
+
+p {
+	font-family: "Source Sans Pro"!important;
+	font-size: 0.9rem!important;
+}
+
+.text_about {
+    padding: 10px;
+    background: #1d7cbf;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.post_list_meta {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.post_list_content {
+	margin-bottom: 0.6rem;
+}
+
+.post_list_content h3 {
+	margin: 0;
+    font-size: 1.1rem;
+    line-height: 1rem;
+
+}
 
 body,
 button,
@@ -620,11 +655,12 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #1d7cbf;
+	transition: 0.4s;
 }
 
 a:visited {
-	color: purple;
+	color: #024472;
 }
 
 a:hover, a:focus, a:active {
@@ -842,15 +878,77 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 .container-fluid.top-icon {
-    background: #4d4d4d;
+    background: #1d7cbf;
     color: white;
     padding: 0 8rem 0 0;
 }
 
-.header-logo {
-    background: #fff;
-    box-shadow: 0 1px 15px gray;
+.img-slider {
+    background-image: url('http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2019/05/tari-sabang-e1557712863502.jpg');
+    height: 100vh;
+    position: static;
+    background-position: inherit;
+    background-attachment: fixed;
+    padding: 5px;
+    }
+
+.row-menu, .row-heading, .row-slider {
+    display: block;
+    position: relative;
 }
+
+.header-logo {
+    background: #ffffff73;
+	box-shadow: 0 1px 15px gray;
+	margin: 1.5rem;
+	border-radius: 5px;
+	display: block;
+	position: relative;
+}
+
+.content-heading {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.content-heading h2 {
+	font-size: 2.5em !important;
+}
+
+.konten-slider {
+    top: 2rem;
+    position: relative;
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    transition: 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    background: #1d7cbf;
+    border-radius: 2px;
+}
+
+.dropdown-item {
+    color: #000;
+    transition: 0.3s;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #1d7cbf;
+}
+
 
 #main {
 	margin-top: 10px;
@@ -860,6 +958,35 @@ a:hover, a:active {
 
 #secondary {
 	margin-top: 10px;
+}
+
+#secondary h2.widget-title {
+
+}
+
+.footer-widget {
+	margin-top: 20px;
+	padding: 20px;
+	background: #1d7cbf;
+	color: #000;
+}
+
+.footer-widget a {
+	color: #0002ad;
+}
+
+.footer-widget .footer-sidebar h3.widget-title {
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.site-content a:hover {
+    color: #fff !important;
+    text-decoration: underline;
+    background: #1d7cbf;
+    padding: 2px;
+    border-radius: 2px;
 }
 
 /*--------------------------------------------------------------
