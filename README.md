@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
@@ -45,3 +46,7 @@ Then, update the stylesheet header in `style.css`, the links in `footer.php` wit
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+=======
+# budayasaya
+WordPress Theme for Directorate General of Cultural, Ministry of Education and Culture Indonesia
+>>>>>>> f37f696c8e0617d9e58d7250c6280a039374439c
