@@ -904,6 +904,58 @@ a:hover, a:active {
 	border-radius: 5px;
 	display: block;
 	position: relative;
+	z-index: 1300;
+	animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.background-post-slider {
+	background-image: url('http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2019/05/IMG_6244.jpg');
+	top: 0px;
+	margin: -12rem auto 20px auto;
+	height: 100vh;
+	padding-top: 10rem;
+}
+
+.content-slider {
+    opacity: 0.85;
+    padding: 0.5rem;
+    background: #ffffff73;
 }
 
 .content-heading {
@@ -950,11 +1002,6 @@ a:hover, a:active {
 }
 
 
-#main {
-	margin-top: 10px;
-	box-shadow: 0 2px 5px gray;
-	padding: 20px;
-}
 
 #secondary {
 	margin-top: 10px;
