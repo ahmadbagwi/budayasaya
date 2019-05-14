@@ -166,6 +166,7 @@ register_nav_menus( array(
 	// Create tab options
 		$post_list_tab = $panel->createTab( array(
 		'name' => 'Post List Content',
+		'desc' => 'This options for page template'
 		) );
 		// Create options in post_list_tab
 		$post_list_tab->createOption( array(
@@ -214,6 +215,39 @@ register_nav_menus( array(
 			'desc' => 'Fill with about website'
 		) );
 		$text_tab->createOption( array(
+			'type' => 'save'
+		) );
+
+	// Create tab options
+		$image_tab = $panel->createTab( array(
+		'name' => 'Menu Services',
+		) );
+		// Create options in post_list_tab
+		$image_tab->createOption( array(
+			'name' => 'Image Menu 1',
+			'id' => 'image_menu_1',
+			'type' => 'upload',
+			'desc' => 'Image services menu 1'
+		) );
+		$image_tab->createOption( array(
+			'name' => 'Image Menu 2',
+			'id' => 'image_menu_2',
+			'type' => 'upload',
+			'desc' => 'Image services menu 2'
+		) );
+		$image_tab->createOption( array(
+			'name' => 'Image Menu 3',
+			'id' => 'image_menu_3',
+			'type' => 'upload',
+			'desc' => 'Image services menu 3'
+		) );
+		$image_tab->createOption( array(
+			'name' => 'Image Menu 4',
+			'id' => 'image_menu_4',
+			'type' => 'upload',
+			'desc' => 'Image services menu 4'
+		) );
+		$image_tab->createOption( array(
 			'type' => 'save'
 		) );
 	}
