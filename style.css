@@ -947,7 +947,7 @@ a:hover, a:active {
 .background-post-slider {
 	background-image: url('http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2019/05/IMG_6244.jpg');
 	top: 0px;
-	margin: -12rem auto 20px auto;
+	margin: -9.6rem auto 20px auto;
 	height: 100vh;
 	padding-top: 10rem;
 }
@@ -970,6 +970,10 @@ a:hover, a:active {
 	font-size: 2.5em !important;
 }
 
+.carousel-item img {
+	max-height: 340px;
+	width: auto;
+}
 .konten-slider {
     top: 2rem;
     position: relative;
@@ -977,6 +981,15 @@ a:hover, a:active {
     width: 100%;
     text-align: center;
     display: block;
+}
+
+.menu-services {
+    margin: 4rem auto 4rem;
+}
+
+.news-blog {
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
