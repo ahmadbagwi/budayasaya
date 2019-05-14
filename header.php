@@ -23,10 +23,10 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'budayasaya' ); ?></a>
-	<div class="container-fluid main-bg-slider">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-lg-12 col-sm-12 col-xs-12 img-slider">
-				<div class="row row-menu">
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+
 					<header id="masthead" class="site-header">
 						<div class="header-logo">
 							<nav class="navbar navbar-expand-md navbar-light" role="navigation">
@@ -52,78 +52,8 @@
 							</nav>
 						</div>	
 					</header><!-- #masthead -->
-				</div><!-- row-menu-->
-				<div class="row row-heading">
-					<div class="content-heading">
-						<h2>Direktorat Jenderal Kebudayaan</h2>
-						<h4>Kementerian Pendidikan dan Kebudayaan</h4>
-					</div>
-				</div><!--row heading-->
-				<div id="row-slider" class="row justify-content-md-center">
-					<div class="col-lg-4 col-sm-10 col-xs-10 content-slider">
-						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-						  <div class="carousel-inner">
-						    <div class="carousel-item active">
-						      <img class="d-block w-100" alt="First slide" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg">
-						      <div class="carousel-caption d-md-block">
-							    <h5>Judul artikel akan tampil disini</h5>
-							    <p>Text excerpt dari konten akan tampil disini dan terpotong dengan readmore</p>
-							  </div>
-						    </div>
-						    <div class="carousel-item">
-						      <img class="d-block w-100" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg" alt="Second slide">
-						      <div class="carousel-caption d-md-block">
-							    <h5>Judul artikel akan tampil disini</h5>
-							    <p>Text excerpt dari konten akan tampil disini dan terpotong</p>
-							  </div>
-						    </div>
-						  </div>
-						  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    <span class="sr-only">Previous</span>
-						  </a>
-						  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    <span class="sr-only">Next</span>
-						  </a>
-						</div>
-						<!--<div class="row">
-							<div class="col-lg-4">
-								<img class="d-block w-100" alt="First slide" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg">
-								Lorem Ipsum Dolor Sit Amet
-							</div>
-							<div class="col-lg-4">
-								<img class="d-block w-100" alt="First slide" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg">
-								Lorem Ipsum Dolor Sit Amet
-							</div>
-							<div class="col-lg-4">
-								<img class="d-block w-100" alt="First slide" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg">
-								Lorem Ipsum Dolor Sit Amet
-							</div>
-						</div>-->
-						 <!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-						  <div class="carousel-inner">
-						    <div class="carousel-item active">
-						      <img class="d-block w-100" alt="First slide" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg">
-						    </div>
-						    <div class="carousel-item">
-						      <img class="d-block w-100" src="..." alt="Second slide">
-						    </div>
-						    <div class="carousel-item">
-						      <img class="d-block w-100" src="..." alt="Third slide">
-						    </div>
-						  </div>
-						  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						    <span class="sr-only">Previous</span>
-						  </a>
-						  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-						    <span class="sr-only">Next</span>
-						  </a>
-						</div>-->
-					</div>
-				</div>
+				
+			
 
 			</div>
 		</div>
