@@ -217,6 +217,12 @@ register_nav_menus( array(
 			'type' => 'save'
 		) );
 	}
+
+	function custom_excerpt_length( $length ) {
+	return 35;
+	}
+
+	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 /**
  * Enqueue scripts and styles.
  */
