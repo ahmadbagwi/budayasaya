@@ -1,11 +1,12 @@
 <?php /* Template Name: Page Classic Template */
 
 get_header();
+require 'titan_options_value.php';
 ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-sm-12 col-xs-12">
-				<div id="primary" class="content-area">
+				<div id="primary" style="margin-top: 0.5rem; margin-bottom: 0.5rem" class="content-area">
 					<main id="main" class="site-main">
 						<div class="row">
 							<div class="col-lg-12 col-sm-12 col-xs-12 main-background">
@@ -13,13 +14,13 @@ get_header();
 							</div>
 							<div class="col-lg-8 col-xs-12 col-sm-12">
 								<?php // Get Titan value for display with slider and looping 
-									$titan = TitanFramework::getInstance( 'budayasaya' );
+									/*$titan = TitanFramework::getInstance( 'budayasaya' );
 									$main_slider = $titan->getOption( 'main_slider' );
 									$post_list_1 = $titan->getOption( 'post_list_1' );
 									$post_list_2 = $titan->getOption( 'post_list_2' );
 									$post_thumbnails_1 = $titan->getOption( 'post_thumbnails_1' );
 									$post_thumbnails_2 = $titan->getOption( 'post_thumbnails_2' );
-									$text_about = $titan->getOption( 'about' );
+									$text_about = $titan->getOption( 'about' );*/
 									// Display the main slider
 									echo do_shortcode( '[recent_post_slider design="design-1" category="'.$main_slider.'" limit="5"]' ); 
 								?>
@@ -56,19 +57,39 @@ get_header();
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-12 col-sm-12 col-xs-12">
-								<div class="text_about">
-									<?php echo $text_about; ?>
+							<div class="col-lg-12 col-sm-12 col-xs-12 text-intro">
+								<div class="row">
+									<div class="col-lg-12 col-sm-12 text-about">
+										<?php echo $text_about; ?>
+									</div>
 								</div>
+								<!-- </div> -->
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-8 col-xs-12 menu-services">
+										<h4>Layanan</h4>
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+												<img src='<?php echo esc_url( $image_src_1 ); ?>' />
+												<h5>Perpustakaan</h5>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+												<img src='<?php echo esc_url( $image_src_2 ); ?>' />
+												<h5>Data Pokok Kebudayaan</h5>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+												<img src='<?php echo esc_url( $image_src_3 ); ?>' />
+												<h5>Pencatatan Warisan Budaya Tak Benda</h5>
+											</div>
+											<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+												<img src='<?php echo esc_url( $image_src_4 ); ?>' />
+												<h5>Registrasi Nasional Cagar Budaya</h5>
+											</div>
+										</div>
+									</div><!-- menu-services -->
+								</div><!--row menu-services -->
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-12 col-sm-12 col-xs-12">
-								<div class="icon-services">
-									<?php echo $text_about; ?>
-								</div>
-							</div>
-						</div>
+			
 						<div class="row">
 							<div class="col-lg-12 col-xs-12 col-sm-12">
 								<div class="row">
