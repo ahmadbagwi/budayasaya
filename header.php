@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'budayasaya' ); ?></a>
-	<div class="container-fluid">
+	<div class="container-fluid <?php if ( !is_front_page() ) { echo'bg-header'; } ?>">
 		<div class="row">
 			<div class="col-lg-12 col-sm-12 col-xs-12">
 
