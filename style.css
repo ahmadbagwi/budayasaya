@@ -405,13 +405,6 @@ p {
 	font-size: 0.9rem!important;
 }
 
-.text_about {
-    padding: 10px;
-    background: #1d7cbf;
-    color: #fff;
-    border-radius: 5px;
-}
-
 .post_list_meta {
     font-size: 0.8rem;
     color: gray;
@@ -522,7 +515,7 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0.5em;
 }
 
 ul {
@@ -884,7 +877,7 @@ a:hover, a:active {
 }
 
 .img-slider {
-    background-image: url('http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2019/05/tari-sabang-e1557712863502.jpg');
+    background-image: url('http://localhost.id/wp_project/budayasaya/wp-content/themes/budayasaya/img/kain-toraja.jpg');
     height: 100vh;
     position: static;
     background-position: inherit;
@@ -945,17 +938,51 @@ a:hover, a:active {
 }
 
 .background-post-slider {
-	background-image: url('http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2019/05/IMG_6244.jpg');
+	background-image: url('img/kain-toraja.jpg');
+	background-attachment: fixed;
 	top: 0px;
-	margin: -9.6rem auto 20px auto;
+	margin: -9.6rem auto 10px auto;
 	height: 100vh;
-	padding-top: 10rem;
+	padding-top: 11.3rem;
+	position: relative;
+}
+
+.bg-header {
+    background-image: url('img/kain-toraja.jpg');
+    background-attachment: fixed;
 }
 
 .content-slider {
     opacity: 0.85;
     padding: 0.5rem;
     background: #ffffff73;
+    position: relative;
+    text-align: center;
+    margin-top: 0 auto;
+}
+
+.text-contact {
+	padding: 2rem;
+	height: auto;
+	background-image: url('img/kain-toraja.jpg');
+	background-attachment: fixed;
+	display: block;
+	position: relative;
+	color: #fff;
+	margin: 0rem auto 10px auto;
+}
+
+.logo-contact {
+	text-align: right;;
+}
+
+.contact {
+	text-align: left;;
+}
+
+.contact ul {
+	margin: 0;
+	padding: 0;
 }
 
 .content-heading {
@@ -971,7 +998,7 @@ a:hover, a:active {
 }
 
 .carousel-item img {
-	max-height: 340px;
+	max-height: 290px;
 	width: auto;
 }
 .konten-slider {
@@ -983,13 +1010,43 @@ a:hover, a:active {
     display: block;
 }
 
+.text-intro {
+	padding: 1rem;
+	height: auto;
+	background: #1d7cbf;
+	margin: 0 auto;
+	background-attachment: fixed;
+	display: block;
+	position: relative;
+	color: #fff;
+}
+
+.post-slider {
+    position: relative;
+    bottom: 1px !important;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+.text-about {
+    padding: 1.5rem;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .menu-services {
-    margin: 4rem auto 4rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5rem;
 }
 
 .news-blog {
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 2rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -1021,11 +1078,13 @@ a:hover, a:active {
 }
 
 #secondary h2.widget-title {
-
+    background: #1d7cbf;
+    color: #fff;
+    padding: 0.2rem;
+    border-radius: 2px;
 }
 
 .footer-widget {
-	margin-top: 20px;
 	padding: 20px;
 	background: #1d7cbf;
 	color: #000;
@@ -1042,11 +1101,8 @@ a:hover, a:active {
 }
 
 .site-content a:hover {
-    color: #fff !important;
+    color: #040a59 !important;
     text-decoration: underline;
-    background: #1d7cbf;
-    padding: 2px;
-    border-radius: 2px;
 }
 
 /*--------------------------------------------------------------
@@ -1058,7 +1114,7 @@ a:hover, a:active {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {
