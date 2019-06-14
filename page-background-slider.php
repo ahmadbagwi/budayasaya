@@ -31,7 +31,7 @@ require 'titan_options_value.php';
 														<div class="carousel-item active">
 															<div class="row">
 																<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-																	<?php echo get_the_post_thumbnail(array('class' => 'd-block w-100', 'alt' => 'First Slide')); ?>
+																	<?php the_post_thumbnail('medium', array('class' => 'd-block w-100'));//echo get_the_post_thumbnail($post->ID,array('class' => 'd-block w-100', 'alt' => 'First Slide')); ?>
 																</div>
 																<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 																	<div class="carousel-caption d-md-block">
@@ -48,8 +48,7 @@ require 'titan_options_value.php';
         												<div class="carousel-item">
         													<div class="row">
 																<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-																	<?php echo get_the_post_thumbnail(array('class' => 'd-block w-100', 'alt' => 'Second Slide')); ?>
-															
+																	<?php the_post_thumbnail('medium', array('class' => 'd-block w-100'));// echo get_the_post_thumbnail($post->ID,array('class' => 'd-block w-100', 'alt' => 'Second Slide')); ?>
 																</div>
 																<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 																	<div class="carousel-caption d-md-block">
@@ -67,21 +66,6 @@ require 'titan_options_value.php';
 													wp_reset_postdata();
 												endif;
 												?>
-
-												<!--<div class="carousel-item active">
-													<img class="d-block w-100" alt="First slide" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg">
-													<div class="carousel-caption d-md-block">
-														<h5>Judul artikel akan tampil disini</h5>
-														<p>Text excerpt dari konten akan tampil disini dan terpotong dengan readmore</p>
-													</div>
-												</div>
-												<div class="carousel-item">
-													<img class="d-block w-100" src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2014/01/dsc20050315_145007_132.jpg" alt="Second slide">
-													<div class="carousel-caption d-md-block">
-														<h5>Judul artikel akan tampil disini</h5>
-														<p>Text excerpt dari konten akan tampil disini dan terpotong</p>
-													</div>
-												</div>-->
 											</div>
 											<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
