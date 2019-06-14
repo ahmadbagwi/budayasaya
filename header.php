@@ -35,7 +35,7 @@
 									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 										<span class="navbar-toggler-icon"></span>
 									</button>
-									<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="http://localhost.id/wp_project/budayasaya/wp-content/uploads/sites/3/2019/05/logo-ditjenbud-400px.png" style="height:80px; width:auto"></a>
+									<a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/ditjenbud.png" style="height:80px; width:auto"></a>
 									<?php
 									wp_nav_menu( array(
 										'theme_location'    => 'primary',
