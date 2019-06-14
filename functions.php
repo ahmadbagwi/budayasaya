@@ -215,6 +215,12 @@ register_nav_menus( array(
 			'desc' => 'Fill with about website'
 		) );
 		$text_tab->createOption( array(
+			'name' => 'Text "address" above of footer',
+			'id' => 'address',
+			'type' => 'textarea',
+			'desc' => 'Fill with address'
+		) );
+		$text_tab->createOption( array(
 			'type' => 'save'
 		) );
 
@@ -253,7 +259,7 @@ register_nav_menus( array(
 	}
 
 	function custom_excerpt_length( $length ) {
-	return 35;
+	return 15;
 	}
 
 	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
@@ -261,21 +267,21 @@ register_nav_menus( array(
  * Enqueue scripts and styles.
  */
 function budayasaya_scripts() {
-	wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
 	
 	wp_enqueue_style( 'budayasaya-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css' );
+	//wp_enqueue_style( 'font-awesome-css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css' );
 
 	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' );
 
-	wp_enqueue_script( 'jquery3', 'https://code.jquery.com/jquery-3.4.1.js' );
+	wp_enqueue_script( 'jquery3', get_template_directory_uri() . '/js/jquery-3.4.1.js' );
 
 	wp_enqueue_script( 'topbutton-js', get_template_directory_uri() . '/js/topbutton.js');
 
 	wp_enqueue_script( 'respond-js', get_template_directory_uri() . '/js/respond.min.js', '1.4.2', true );
 
-	wp_enqueue_script( 'budayasaya-bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js' );
+	wp_enqueue_script( 'budayasaya-bootstrapjs', get_template_directory_uri() . '/js/bootstrap.js' );
 
 	wp_enqueue_script( 'budayasaya-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
