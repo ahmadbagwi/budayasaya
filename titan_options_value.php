@@ -6,6 +6,7 @@
 	$post_list_2 = $titan->getOption( 'post_list_2' );
 	$post_thumbnails_1 = $titan->getOption( 'post_thumbnails_1' );
 	$post_thumbnails_2 = $titan->getOption( 'post_thumbnails_2' );
+	$address = $titan->getOption( 'address' );
 	$text_about = $titan->getOption( 'about' );
 	$image_id_1 = $titan->getOption( 'image_menu_1' );
 	$image_id_2 = $titan->getOption( 'image_menu_2' );
