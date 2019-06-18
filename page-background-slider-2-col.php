@@ -1,4 +1,4 @@
-<?php /* Template Name: Page Background Slider */
+<?php /* Template Name: Page Background Slider 2 Col */
 
 get_header();
 require 'titan_options_value.php';
@@ -121,12 +121,12 @@ require 'titan_options_value.php';
 										<div class="row">										
 										<?php
 										// Display post thumbnail 1 (on the bottom of slider)
-											$query3 = new WP_Query( array( 'cat' => $post_thumbnails_1, 'posts_per_page' => 3 ) ); 
+											$query3 = new WP_Query( array( 'cat' => $post_thumbnails_1, 'posts_per_page' => 4 ) ); 
 											if ( $query3->have_posts() ) {
 												// The Loop
 												while ( $query3->have_posts() ) {
 													$query3->the_post(); ?>
-													<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 post_list_thumbnail">
+													<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post_list_thumbnail">
 													    <div class="thumbnail">
 													      <?php echo get_the_post_thumbnail(); ?>
 													      <div class="caption">
@@ -150,12 +150,12 @@ require 'titan_options_value.php';
 											<div class="row">
 												<?php
 												// Display post thumbnail 2 (on the bottom of post thumbnail 1)
-												$query_4 = new WP_Query( array( 'cat' => $post_thumbnails_2, 'posts_per_page' => 3 ) ); 
+												$query_4 = new WP_Query( array( 'cat' => $post_thumbnails_2, 'posts_per_page' => 4 ) ); 
 												if ( $query_4->have_posts() ) {
 														// The Loop
 													while ( $query_4->have_posts() ) {
 														$query_4->the_post(); ?>
-														<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 post_list_thumbnail">
+														<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 post_list_thumbnail">
 															<div class="thumbnail">
 																<?php echo get_the_post_thumbnail(); ?>
 																<div class="caption">
